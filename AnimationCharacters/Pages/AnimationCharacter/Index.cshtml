@@ -1,0 +1,60 @@
+@page
+@model AnimationCharacters.Pages_AnimationCharacter.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AnimationCharacter[0].TitleMovie)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AnimationCharacter[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AnimationCharacter[0].Age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AnimationCharacter[0].Scenery)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AnimationCharacter[0].Category)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.AnimationCharacter) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TitleMovie)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Scenery)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -212,6 +212,11 @@ C:\Users\UsuarioAdm\Documents\GitProjects\Teste-Tecnico\AnimationCharacters\Anim
 C:\Users\UsuarioAdm\Documents\GitProjects\Teste-Tecnico\AnimationCharacters\AnimationCharacters\obj\Debug\net5.0\AnimationCharacters.TagHelpers.input.cache
 C:\Users\UsuarioAdm\Documents\GitProjects\Teste-Tecnico\AnimationCharacters\AnimationCharacters\obj\Debug\net5.0\AnimationCharacters.TagHelpers.output.cache
 C:\Users\UsuarioAdm\Documents\GitProjects\Teste-Tecnico\AnimationCharacters\AnimationCharacters\obj\Debug\net5.0\AnimationCharacters.RazorCoreGenerate.cache
+C:\Users\UsuarioAdm\Documents\GitProjects\Teste-Tecnico\AnimationCharacters\AnimationCharacters\obj\Debug\net5.0\Razor\Pages\AnimationCharacter\Create.cshtml.g.cs
+C:\Users\UsuarioAdm\Documents\GitProjects\Teste-Tecnico\AnimationCharacters\AnimationCharacters\obj\Debug\net5.0\Razor\Pages\AnimationCharacter\Delete.cshtml.g.cs
+C:\Users\UsuarioAdm\Documents\GitProjects\Teste-Tecnico\AnimationCharacters\AnimationCharacters\obj\Debug\net5.0\Razor\Pages\AnimationCharacter\Details.cshtml.g.cs
+C:\Users\UsuarioAdm\Documents\GitProjects\Teste-Tecnico\AnimationCharacters\AnimationCharacters\obj\Debug\net5.0\Razor\Pages\AnimationCharacter\Edit.cshtml.g.cs
+C:\Users\UsuarioAdm\Documents\GitProjects\Teste-Tecnico\AnimationCharacters\AnimationCharacters\obj\Debug\net5.0\Razor\Pages\AnimationCharacter\Index.cshtml.g.cs
 C:\Users\UsuarioAdm\Documents\GitProjects\Teste-Tecnico\AnimationCharacters\AnimationCharacters\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
 C:\Users\UsuarioAdm\Documents\GitProjects\Teste-Tecnico\AnimationCharacters\AnimationCharacters\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
 C:\Users\UsuarioAdm\Documents\GitProjects\Teste-Tecnico\AnimationCharacters\AnimationCharacters\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
