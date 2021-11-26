@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using AnimationCharacters.Models;
 
-namespace AnimationCharacters.Pages_AnimationCharacter
+namespace AnimationCharacters.Pages_Character
 {
     public class CreateModel : PageModel
     {
@@ -24,7 +24,7 @@ namespace AnimationCharacters.Pages_AnimationCharacter
         }
 
         [BindProperty]
-        public AnimationCharacter AnimationCharacter { get; set; }
+        public Character Character { get; set; }
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
@@ -34,7 +34,7 @@ namespace AnimationCharacters.Pages_AnimationCharacter
                 return Page();
             }
 
-            _context.AnimationCharacter.Add(AnimationCharacter);
+            _context.Character.Add(Character);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

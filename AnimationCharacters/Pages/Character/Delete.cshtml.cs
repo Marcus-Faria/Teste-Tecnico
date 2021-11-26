@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using AnimationCharacters.Models;
 
-namespace AnimationCharacters.Pages_AnimationCharacter
+namespace AnimationCharacters.Pages_Character
 {
     public class DeleteModel : PageModel
     {
@@ -19,7 +19,7 @@ namespace AnimationCharacters.Pages_AnimationCharacter
         }
 
         [BindProperty]
-        public AnimationCharacter AnimationCharacter { get; set; }
+        public Character Character { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -28,9 +28,9 @@ namespace AnimationCharacters.Pages_AnimationCharacter
                 return NotFound();
             }
 
-            AnimationCharacter = await _context.AnimationCharacter.FirstOrDefaultAsync(m => m.ID == id);
+            Character = await _context.Character.FirstOrDefaultAsync(m => m.ID == id);
 
-            if (AnimationCharacter == null)
+            if (Character == null)
             {
                 return NotFound();
             }
@@ -44,11 +44,11 @@ namespace AnimationCharacters.Pages_AnimationCharacter
                 return NotFound();
             }
 
-            AnimationCharacter = await _context.AnimationCharacter.FindAsync(id);
+            Character = await _context.Character.FindAsync(id);
 
-            if (AnimationCharacter != null)
+            if (Character != null)
             {
-                _context.AnimationCharacter.Remove(AnimationCharacter);
+                _context.Character.Remove(Character);
                 await _context.SaveChangesAsync();
             }
 

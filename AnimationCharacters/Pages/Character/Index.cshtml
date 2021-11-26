@@ -1,5 +1,5 @@
 @page
-@model AnimationCharacters.Pages_AnimationCharacter.IndexModel
+@model AnimationCharacters.Pages_Character.IndexModel
 
 @{
     ViewData["Title"] = "Index";
@@ -14,40 +14,40 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.AnimationCharacter[0].TitleMovie)
+                @Html.DisplayNameFor(model => model.Character[0].TitleMovie)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.AnimationCharacter[0].Name)
+                @Html.DisplayNameFor(model => model.Character[0].ReleaseDate)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.AnimationCharacter[0].Age)
+                @Html.DisplayNameFor(model => model.Character[0].NameCharacter)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.AnimationCharacter[0].Scenery)
+                @Html.DisplayNameFor(model => model.Character[0].CategoryCharacter)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.AnimationCharacter[0].Category)
+                @Html.DisplayNameFor(model => model.Character[0].Scenery)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.AnimationCharacter) {
+@foreach (var item in Model.Character) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.TitleMovie)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Name)
+                @Html.DisplayFor(modelItem => item.ReleaseDate)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Age)
+                @Html.DisplayFor(modelItem => item.NameCharacter)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryCharacter)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Scenery)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Category)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |

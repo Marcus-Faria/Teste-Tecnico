@@ -15,19 +15,19 @@ namespace AnimationCharacters.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "5.0.0");
 
-            modelBuilder.Entity("AnimationCharacters.Models.AnimationCharacter", b =>
+            modelBuilder.Entity("AnimationCharacters.Models.Character", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTime>("Age")
+                    b.Property<string>("CategoryCharacter")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Category")
+                    b.Property<string>("NameCharacter")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Name")
+                    b.Property<DateTime>("ReleaseDate")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Scenery")
@@ -38,7 +38,7 @@ namespace AnimationCharacters.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("AnimationCharacter");
+                    b.ToTable("Character");
                 });
 #pragma warning restore 612, 618
         }

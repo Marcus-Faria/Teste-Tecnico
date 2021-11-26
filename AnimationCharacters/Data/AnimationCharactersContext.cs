@@ -12,5 +12,5 @@ using AnimationCharacters.Models;
         {
         }
 
-        public DbSet<AnimationCharacters.Models.AnimationCharacter> AnimationCharacter { get; set; }
+        public DbSet<AnimationCharacters.Models.Character> Character { get; set; }
     }

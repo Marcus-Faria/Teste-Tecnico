@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using AnimationCharacters.Models;
 
-namespace AnimationCharacters.Pages_AnimationCharacter
+namespace AnimationCharacters.Pages_Character
 {
     public class DetailsModel : PageModel
     {
@@ -18,7 +18,7 @@ namespace AnimationCharacters.Pages_AnimationCharacter
             _context = context;
         }
 
-        public AnimationCharacter AnimationCharacter { get; set; }
+        public Character Character { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -27,9 +27,9 @@ namespace AnimationCharacters.Pages_AnimationCharacter
                 return NotFound();
             }
 
-            AnimationCharacter = await _context.AnimationCharacter.FirstOrDefaultAsync(m => m.ID == id);
+            Character = await _context.Character.FirstOrDefaultAsync(m => m.ID == id);
 
-            if (AnimationCharacter == null)
+            if (Character == null)
             {
                 return NotFound();
             }

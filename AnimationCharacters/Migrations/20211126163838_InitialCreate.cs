@@ -8,27 +8,27 @@ namespace AnimationCharacters.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "AnimationCharacter",
+                name: "Character",
                 columns: table => new
                 {
                     ID = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     TitleMovie = table.Column<string>(type: "TEXT", nullable: true),
-                    Name = table.Column<string>(type: "TEXT", nullable: true),
-                    Age = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    Scenery = table.Column<string>(type: "TEXT", nullable: true),
-                    Category = table.Column<string>(type: "TEXT", nullable: true)
+                    ReleaseDate = table.Column<DateTime>(type: "TEXT", nullable: false),
+                    NameCharacter = table.Column<string>(type: "TEXT", nullable: true),
+                    CategoryCharacter = table.Column<string>(type: "TEXT", nullable: true),
+                    Scenery = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_AnimationCharacter", x => x.ID);
+                    table.PrimaryKey("PK_Character", x => x.ID);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "AnimationCharacter");
+                name: "Character");
         }
     }
 }
