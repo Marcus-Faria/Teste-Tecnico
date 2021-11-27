@@ -1,4 +1,4 @@
-@page
+@page "{searchString?}"
 @model AnimationCharacters.Pages_Character.IndexModel
 
 @{
@@ -10,6 +10,17 @@
 <p>
     <a asp-page="Create">Novo Registro</a>
 </p>
+
+<form>
+    <p>
+        <select asp-for="CtgCharacter" asp-items="Model.Categories">
+            <option value="">All</option>
+        </select>
+        Title: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
 <table class="table">
     <thead>
         <tr>
