@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using AnimationCharacters.Models;
+using AnimationCharacters.Data;
 
 namespace AnimationCharacters.Pages_Character
 {

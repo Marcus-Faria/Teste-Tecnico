@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using AnimationCharacters.Models;
 
+namespace AnimationCharacters.Data
+{
     public class AnimationCharactersContext : DbContext
     {
         public AnimationCharactersContext (DbContextOptions<AnimationCharactersContext> options)
@@ -14,3 +16,4 @@ using AnimationCharacters.Models;
 
         public DbSet<AnimationCharacters.Models.Character> Character { get; set; }
     }
+}
