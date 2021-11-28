@@ -5,24 +5,24 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Banco de Dados</h1>
+<h1>Database</h1>
 
 <p>
-    <a asp-page="Create">Novo Registro</a>
+    <a asp-page="Create">New Register</a>
 </p>
 
 <form>
     <p>
-        <select asp-for="CtgCharacter" asp-items="Model.Categories">
+        <select asp-for="CtgCharacter" asp-items="Model.Categories" class="rounded p-1 mb-2 bg-dark text-white">
             <option value="">All</option>
         </select>
-        Title: <input type="text" asp-for="SearchString" />
-        <input type="submit" value="Filter" />
+        Title: <input type="text" asp-for="SearchString" class="rounded p-1 mb-2 bg-dark text-white" />
+        <input type="submit" value="Filter" class="rounded p-1 mb-2 bg-light text-black" />
     </p>
 </form>
 
-<table class="table">
-    <thead>
+<table class="table table-dark rounded-top">
+    <thead class="table-secondary text-dark">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Character[0].TitleMovie)
@@ -60,10 +60,10 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Scenery)
             </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.ID">Editar</a> |
-                <a asp-page="./Details" asp-route-id="@item.ID">Detalhes</a> |
-                <a asp-page="./Delete" asp-route-id="@item.ID">Deletar</a>
+            <td class="text-primary">
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
             </td>
         </tr>
 }

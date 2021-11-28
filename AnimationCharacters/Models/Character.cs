@@ -9,6 +9,7 @@ namespace AnimationCharacters.Models
         public int ID { get; set; }
 
         [RegularExpression(@"^[a-zA-Z0-9\s-:?!ºª+&%#]*$")]
+        [Display(Name = "Title")]
         [StringLength(60, MinimumLength = 3)]
         [Required]
         public string TitleMovie { get; set; }
@@ -18,11 +19,13 @@ namespace AnimationCharacters.Models
         public DateTime ReleaseDate { get; set; }
 
         [RegularExpression(@"^[A-Z]+[a-zA-Z0-9\s-]*$")]
+        [Display(Name = "Character")]
         [StringLength(30)]
         [Required]
         public string NameCharacter { get; set; }
 
         [RegularExpression(@"^[A-Z]+[a-zA-Z]*$")]
+        [Display(Name = "Category")]
         [StringLength(20)]
         [Required]
         public string CategoryCharacter { get; set; }
