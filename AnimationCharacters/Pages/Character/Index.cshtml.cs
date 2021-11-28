@@ -24,6 +24,7 @@ namespace AnimationCharacters.Pages_Character
         [BindProperty(SupportsGet = true)]
         public string SearchString { get; set; }
         public SelectList Categories { get; set; }
+        [BindProperty(SupportsGet = true)]
         public string CtgCharacter { get; set; }
 
         public async Task OnGetAsync()

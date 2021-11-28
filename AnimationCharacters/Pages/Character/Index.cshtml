@@ -11,13 +11,13 @@
     <a asp-page="Create">New Register</a>
 </p>
 
-<form>
+<form class="form-inline">
     <p>
-        <select asp-for="CtgCharacter" asp-items="Model.Categories" class="rounded p-1 mb-2 bg-dark text-white">
+        <select asp-for="CtgCharacter" asp-items="Model.Categories" class="form-control mr-sm-2 bg-dark text-white">
             <option value="">All</option>
         </select>
-        Title: <input type="text" asp-for="SearchString" class="rounded p-1 mb-2 bg-dark text-white" />
-        <input type="submit" value="Filter" class="rounded p-1 mb-2 bg-light text-black" />
+        Title: <input type="search" asp-for="SearchString" class="form-control mr-sm-2 bg-dark text-white" placeholder="Search" />
+        <input type="submit" value="Filter" class="btn btn-outline-info my-2 my-sm-0" />
     </p>
 </form>
 

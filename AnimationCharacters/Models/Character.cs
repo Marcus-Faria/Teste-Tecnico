@@ -14,6 +14,7 @@ namespace AnimationCharacters.Models
         [Required]
         public string TitleMovie { get; set; }
 
+        [Range(typeof(DateTime), "1/1/1900", "1/1/2200")]
         [Display(Name = "Release Date")]
         [DataType(DataType.Date)]
         public DateTime ReleaseDate { get; set; }
