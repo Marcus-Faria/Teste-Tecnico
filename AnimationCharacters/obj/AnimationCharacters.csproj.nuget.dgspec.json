@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\UsuarioAdm\\Documents\\GitProjects\\Teste-Tecnico\\AnimationCharacters\\AnimationCharacters\\AnimationCharacters.csproj": {}
+    "C:\\Users\\UsuarioAdm\\Documents\\GitProjects\\Teste-Tecnico\\AnimationCharacters\\animationcharacters\\AnimationCharacters.csproj": {}
   },
   "projects": {
-    "C:\\Users\\UsuarioAdm\\Documents\\GitProjects\\Teste-Tecnico\\AnimationCharacters\\AnimationCharacters\\AnimationCharacters.csproj": {
+    "C:\\Users\\UsuarioAdm\\Documents\\GitProjects\\Teste-Tecnico\\AnimationCharacters\\animationcharacters\\AnimationCharacters.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UsuarioAdm\\Documents\\GitProjects\\Teste-Tecnico\\AnimationCharacters\\AnimationCharacters\\AnimationCharacters.csproj",
+        "projectUniqueName": "C:\\Users\\UsuarioAdm\\Documents\\GitProjects\\Teste-Tecnico\\AnimationCharacters\\animationcharacters\\AnimationCharacters.csproj",
         "projectName": "AnimationCharacters",
-        "projectPath": "C:\\Users\\UsuarioAdm\\Documents\\GitProjects\\Teste-Tecnico\\AnimationCharacters\\AnimationCharacters\\AnimationCharacters.csproj",
+        "projectPath": "C:\\Users\\UsuarioAdm\\Documents\\GitProjects\\Teste-Tecnico\\AnimationCharacters\\animationcharacters\\AnimationCharacters.csproj",
         "packagesPath": "C:\\Users\\UsuarioAdm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UsuarioAdm\\Documents\\GitProjects\\Teste-Tecnico\\AnimationCharacters\\AnimationCharacters\\obj\\",
+        "outputPath": "C:\\Users\\UsuarioAdm\\Documents\\GitProjects\\Teste-Tecnico\\AnimationCharacters\\animationcharacters\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages",
